@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Каталог магазина Device</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="index.html"><img class="header-logo" src="img/logo.png" width="100" height="100" alt="Логотип магазина Device"></a>
+      <form class="search">
+        <input class="search-input" type="text" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти">
+      </form>
+      <ul class="user-navigation">
+        <li class="username-link"><a href="#">Валентин Петухов</a></li>
+        <li class="logout-link"><a href="#">Выйти</a></li>
+        <li class="compare-link"><a href="#">Сравнить</a></li>
+        <li class="basket-link"><a href="#">Корзина</a></li>
+      </ul>
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Каталог товаров</a>
+          <ul class="catalog-navigation">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+
+    <h1 class="page-title">Моноподы для селфи</h1>
+
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог товаров</a></li>
+      <li class="breadcrumbs-current">Моноподы для селфи</li>
+    </ul>
+
+    <section class="filters">
+      <h2>Фильтр:</h2>
+      <!-- Форма фильтрации -->
+    </section>
+
+    <section class="sort">
+      <h2>Сортировка:</h2>
+      <ul class="sort-param">
+        <li class="sort-param-current"><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По популярности</a></li>
+      </ul>
+      <ul class="sort-order">
+        <li><a href="#">По возрастанию</a></li>
+        <li class="sort-order-current"><a href="#">По убыванию</a></li>
+      </ul>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Список моноподов</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h3 class="catalog-item-name"><a href="#">Любительская селфи-палка</a></h3>
+          <b class="catalog-item-price">500 руб.</b>
+          <p>
+            <img src="img/item1.jpg" width="100" height="100" alt="Любительская селфи-палка">
+            <button class="basket-link" type="button">В корзину</button>
+            <button class="compare-link" type="button">Добавить к сравнению</button>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <h3 class="catalog-item-name"><a href="#">Профессиональная селфи-палка </a></h3>
+          <b class="catalog-item-price">1 500 руб.</b>
+          <p>
+            <img src="img/item1.jpg" width="100" height="100" alt="Профессиональная селфи-палка ">
+            <button class="basket-link" type="button">В корзину</button>
+            <button class="compare-link" type="button">Добавить к сравнению</button>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <h3 class="catalog-item-name"><a href="#">Непотопляемая селфи-палка</a></h3>
+          <b class="catalog-item-price">2 500 руб.</b>
+          <p>
+            <img src="img/item1.jpg" width="100" height="100" alt="Непотопляемая селфи-палка">
+            <button class="basket-link" type="button">В корзину</button>
+            <button class="compare-link" type="button">Добавить к сравнению</button>
+          </p>
+        </li>
+        <li class="catalog-item catalog-item-new">
+          <h3 class="catalog-item-name"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+          <b class="catalog-item-price">4 900 руб.</b>
+          <p>
+            <img src="img/item1.jpg" width="100" height="100" alt="Селфи-палка «Следуй за мной»">
+            <button class="basket-link" type="button">В корзину</button>
+            <button class="compare-link" type="button">Добавить к сравнению</button>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <ul class="pagination">
+      <li class="pagination-item pagination-prev"><a>Назад</a></li>
+      <li class="pagination-item pagination-item-current"><a>1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item pagination-next"><a href="#">Вперед</a></li>
+    </ul>
+  </main>
+  <footer class="main-footer">
+    <a><img class="footer-logo" src="img/logo.svg" width="100" height="100" alt="Логотип магазина Device"></a>
+    <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
+    <ul class="footer-site-navigation">
+      <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
+      <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
+      <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
+    </ul>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+      </ul>
+    </div>
+    <ul class="footer-user-navigation">
+      <li class="login-link"><a href="#">Войти</a></li>
+      <li class="compare-link"><a href="#">Сравнить</a></li>
+      <li class="basket-link"><a href="#">Корзина</a></li>
+    </ul>
+    <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+    <p class="copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+    </p>
+  </footer>
+
+  <section class="write-form">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <!-- Форма обратной связи -->
+    <span class="modal-close">x</span>
+  </section>
+</body>
+</html>

@@ -6,19 +6,19 @@
 </head>
 <body>
   <header class="main-header">
+    <a href="index.html"><img class="header-logo" src="img/logo.png" width="100" height="100" alt="Логотип магазина Device"></a>
+    <form class="search">
+      <input class="search-input" type="search" placeholder="Поиск по сайту">
+      <button class="search-button" type="submit">Найти</button>
+    </form>
+    <ul class="user-navigation">
+      <li class="username-link"><a href="#">Валентин Петухов</a></li>
+      <li class="logout-link"><a href="#">Выйти</a></li>
+      <li class="compare-link"><a href="#">Сравнить</a></li>
+      <li class="basket-link"><a href="#">Корзина</a></li>
+    </ul>
     <nav class="main-navigation">
-      <a href="index.html"><img class="header-logo" src="img/logo.png" width="100" height="100" alt="Логотип магазина Device"></a>
-      <form class="search">
-        <input class="search-input" type="text" placeholder="Поиск по сайту">
-        <input type="submit" value="Найти">
-      </form>
-      <ul class="user-navigation">
-        <li class="username-link"><a href="#">Валентин Петухов</a></li>
-        <li class="logout-link"><a href="#">Выйти</a></li>
-        <li class="compare-link"><a href="#">Сравнить</a></li>
-        <li class="basket-link"><a href="#">Корзина</a></li>
-      </ul>
-      <ul class="site-navigation">
+      <ul>
         <li>
           <a href="#">Каталог товаров</a>
           <ul class="catalog-navigation">
@@ -43,7 +43,7 @@
     <ul class="breadcrumbs">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Каталог товаров</a></li>
-      <li class="breadcrumbs-current">Моноподы для селфи</li>
+      <li>Моноподы для селфи</li>
     </ul>
 
     <section class="filters">
@@ -54,13 +54,13 @@
     <section class="sort">
       <h2>Сортировка:</h2>
       <ul class="sort-param">
-        <li class="sort-param-current"><a href="#">По цене</a></li>
+        <li><a>По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По популярности</a></li>
       </ul>
       <ul class="sort-order">
         <li><a href="#">По возрастанию</a></li>
-        <li class="sort-order-current"><a href="#">По убыванию</a></li>
+        <li><a>По убыванию</a></li>
       </ul>
     </section>
 
@@ -114,20 +114,18 @@
     </ul>
   </main>
   <footer class="main-footer">
-    <a><img class="footer-logo" src="img/logo.svg" width="100" height="100" alt="Логотип магазина Device"></a>
+    <a href="index.html"><img class="footer-logo" src="img/logo.png" width="100" height="100" alt="Логотип магазина Device"></a>
     <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-site-navigation">
       <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
       <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
       <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
     </ul>
-    <div class="footer-social">
-      <ul>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-      </ul>
-    </div>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#">Твиттер</a></li>
+    </ul>
     <ul class="footer-user-navigation">
       <li class="login-link"><a href="#">Войти</a></li>
       <li class="compare-link"><a href="#">Сравнить</a></li>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a><img class="header-logo" src="img/logo.png" width="100" height="100" alt="Логотип магазина Device"></a>
+      <a class="header-logo"><img src="img/logo.png" width="100" height="100" alt="Логотип магазина Device"></a>
       <form class="search">
         <input class="search-input" type="search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
@@ -191,13 +191,15 @@
         <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <p>
-          <img class="contacts-map" src="img/map.jpg" width="100" height="100" alt="улица Строителей, 15">
+          <a href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618">
+            <img class="contacts-map" src="img/map.jpg" width="100" height="100" alt="улица Строителей, 15">
+          </a>
         </p>
         <button class="contacts-mail" type="button">Напишите нам</button>
       </section>
     </main>
     <footer class="main-footer">
-      <a><img class="footer-logo" src="img/logo-footer.png" width="100" height="100" alt="Логотип магазина Device"></a>
+      <a class="footer-logo"><img src="img/logo-footer.png" width="100" height="100" alt="Логотип магазина Device"></a>
       <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
       <ul class="footer-site-navigation">
         <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
@@ -205,9 +207,9 @@
         <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button social-fb" href="#">Фейсбук</a></li>
+        <li><a class="social-button social-ig" href="#">Инстаграм</a></li>
+        <li><a class="social-button social-tw" href="#">Твиттер</a></li>
       </ul>
       <ul class="footer-user-navigation">
         <li class="login-link"><a href="#">Войти</a></li>
@@ -216,13 +218,19 @@
       </ul>
       <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
       <p class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
 
     <section class="write-form">
       <h2 class="visually-hidden">Напишите нам</h2>
       <!-- Форма обратной связи -->
+      <span class="modal-close">x</span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.jpg" width="100" height="100" alt="г. Москва, ул. Строителей, 15">
       <span class="modal-close">x</span>
     </section>
   </body>

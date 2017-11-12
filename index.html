@@ -221,14 +221,34 @@
 
     <section class="write-form">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Форма обратной связи -->
-      <span class="modal-close">x</span>
+      <form class="write" action="#" method="post">
+        <p>
+          <label>
+            Ваше имя:
+            <input class="write-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:
+            <input class="write-input" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:
+            <textarea class="write-textarea">В свободной форме</textarea>
+          </label>
+        </p>
+        <button class="button write-button" type="submit">Отправить</button>
+      </form>
+      <button class="button modal-close" type="button">x</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-big.png" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
-      <span class="modal-close">x</span>
+      <img src="img/map-big.png" width="994" height="593" alt="Офис по адресу г. Москва, ул. Строителей, 15">
+      <button class="button modal-close">x</button>
     </section>
   </body>
 </html>

@@ -48,7 +48,77 @@
 
     <section class="filters">
       <h2>Фильтр:</h2>
-      <!-- Форма фильтрации -->
+      <form class="filter" method="get" action="#">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <div class="price-range">
+            <div class="price-min"></div>
+            <div class="price-max"></div>
+            <span class="price-min-value">от 0</span>
+            <span class="price-max-value">до 5000</span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="black" value="black" checked>
+                <span class="checkbox-indicator"></span>
+                Черный
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="white" value="white">
+                <span class="checkbox-indicator"></span>
+                Белый
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="blue" value="blue" checked>
+                <span class="checkbox-indicator"></span>
+                Синий
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="red" value="red" checked>
+                <span class="checkbox-indicator"></span>
+                Красный
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="pink" value="pink">
+                <span class="checkbox-indicator"></span>
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-radio" type="radio" name="bluetooth" value="yes">
+                <span class="radio-indicator"></span>
+                Да
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-input filter-radio" type="radio" name="bluetooth" value="no">
+                <span class="radio-indicator"></span>
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="sort">
@@ -147,8 +217,28 @@
 
   <section class="write-form">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <!-- Форма обратной связи -->
-    <span class="modal-close">x</span>
+    <form class="write" action="#" method="post">
+      <p>
+        <label>
+          Ваше имя:
+          <input class="write-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+        </label>
+      </p>
+      <p>
+        <label>
+          Ваш e-mail:
+          <input class="write-input" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+        </label>
+      </p>
+      <p>
+        <label>
+          Текст письма:
+          <textarea class="write-textarea">В свободной форме</textarea>
+        </label>
+      </p>
+      <button class="button write-button" type="submit">Отправить</button>
+    </form>
+    <button class="button modal-close" type="button">x</button>
   </section>
 </body>
 </html>

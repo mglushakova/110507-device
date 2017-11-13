@@ -54,8 +54,14 @@
           <div class="price-range">
             <button class="price-min" type="button"></button>
             <button class="price-max" type="button"></button>
-            <span class="price-min-value">от 0</span>
-            <span class="price-max-value">до 5000</span>
+            <label>
+              от
+              <input class="price-min-value" type="text" name="price-min" value="0">
+            </label>
+            <label>
+              до
+              <input class="price-max-value" type="text" name="price-max" value="5000">
+            </label>
           </div>
         </fieldset>
         <fieldset>
@@ -233,7 +239,7 @@
       <p>
         <label>
           Текст письма:
-          <textarea class="write-textarea">В свободной форме</textarea>
+          <textarea class="write-textarea" name="message" placeholder="В свободной форме"></textarea>
         </label>
       </p>
       <button class="button write-button" type="submit">Отправить</button>

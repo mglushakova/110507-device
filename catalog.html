@@ -52,8 +52,8 @@
         <fieldset>
           <legend>Стоимость</legend>
           <div class="price-range">
-            <div class="price-min"></div>
-            <div class="price-max"></div>
+            <button class="price-min" type="button"></button>
+            <button class="price-max" type="button"></button>
             <span class="price-min-value">от 0</span>
             <span class="price-max-value">до 5000</span>
           </div>
@@ -103,9 +103,9 @@
           <ul>
             <li class="filter-option">
               <label>
-                <input class="visually-hidden filter-input filter-radio" type="radio" name="bluetooth" value="yes">
+                <input class="visually-hidden filter-input filter-radio" type="radio" name="bluetooth" value="yes" checked>
                 <span class="radio-indicator"></span>
-                Да
+                Есть
               </label>
             </li>
             <li class="filter-option">
@@ -227,7 +227,7 @@
       <p>
         <label>
           Ваш e-mail:
-          <input class="write-input" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+          <input class="write-input" type="email" name="e-mail" value="" placeholder="Для отправки ответа">
         </label>
       </p>
       <p>
@@ -238,7 +238,7 @@
       </p>
       <button class="button write-button" type="submit">Отправить</button>
     </form>
-    <button class="button modal-close" type="button">x</button>
+    <button class="button modal-close" type="button">Закрыть</button>
   </section>
 </body>
 </html>

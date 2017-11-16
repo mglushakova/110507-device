@@ -1,37 +1,33 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-    url('../fonts/gilroyextrabold.woff') format('woff');
+    font-family: "gilroyextrabold";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'gilroylight';
-    src: url('../fonts/gilroylight.woff2') format('woff2'),
-    url('../fonts/gilroylight.woff') format('woff');
+    font-family: "gilroylight";
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('../fonts/opensanslight.woff2') format('woff2'),
-    url('../fonts/opensanslight.woff') format('woff');
+    font-family: "open_sanslight";
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/opensans.woff2') format('woff2'),
-    url('../fonts/opensans.woff') format('woff');
+    font-family: "open_sansregular";
+    src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -41,7 +37,10 @@ body {
     font-family: "open_sanslight", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    
+    background-color: #ffffff;
 }
 
 a {
@@ -52,21 +51,23 @@ a {
     vertical-align: middle;
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
 
     background-color: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, 0) 33%, #f0c52e 33%, #f0c52e 66%, rgba(0, 0, 0, 0) 66%);
     border: none;
+    border-radius: 0;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #f0c52e;
     background-image: none;
 }
 
-.button:focus {
+.button:active {
     color: rgba(0, 0, 0, 0.3);
 
     background-image: none;
@@ -80,30 +81,21 @@ a {
     color: #000000;
 }
 
-.main-header a:hover {
+.main-header a[href]:hover,
+.main-header a[href]:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.main-header a:focus {
+.main-header a[href]:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-a.header-logo,
-a.header-logo:hover,
-a.header-logo:focus {
+a.header-logo {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 48px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #000000;
-}
-
-a.header-logo[href]:hover {
-    color: rgba(0, 0, 0, 0.6);
-}
-
-a.header-logo[href]:focus {
-    color: rgba(0, 0, 0, 0.3);
 }
 
 .search-input {
@@ -129,15 +121,17 @@ a.header-logo[href]:focus {
 .search-button {
     background-color: transparent;
     border: 2px solid #000000;
+    border-radius: 0;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
     color: #ffffff;
     
     background-color: #000000;
 }
 
-.search-button:focus {
+.search-button:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -156,7 +150,7 @@ a.header-logo[href]:focus {
 .main-navigation a {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
@@ -172,10 +166,14 @@ a.header-logo[href]:focus {
     text-transform: none;
 }
 
+.catalog-navigation .current-link {
+
+}
+
 .page-title {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
@@ -187,18 +185,19 @@ a.header-logo[href]:focus {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs a:focus {
+.breadcrumbs a:active {
     color: rgba(0, 0, 0, 0.1);
 }
 
 .promo-title {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .promo-description {
@@ -213,7 +212,7 @@ a.header-logo[href]:focus {
 .product-features-value {
     font-family: "gilroylight", Arial, sans-serif;
     font-size: 36px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .product-features-name {
@@ -230,22 +229,23 @@ a.header-logo[href]:focus {
     background-color: #f7e296;
 }
 
-.categories-link:hover .categories-wrap {
+.categories-link:hover .categories-wrap,
+.categories-link:focus .categories-wrap {
     background-color: #f0c52e;
 }
 
-.categories-link:focus img {
+.categories-link:active img {
     opacity: 0.3;
 }
 
-.categories-link:focus h3 {
+.categories-link:active h3 {
     color: rgba(0, 0, 0, 0.3);
 }
 
 .categories-item h3 {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
     color: #000000;
 }
 
@@ -260,7 +260,7 @@ a.header-logo[href]:focus {
 .service-title {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .service-description {
@@ -280,7 +280,8 @@ a.header-logo[href]:focus {
     background-repeat: no-repeat;
 }
 
-.brands-logo:hover {
+.brands-logo:hover,
+.brands-logo:focus {
     background-position: 0 -100px;
 }
 
@@ -303,7 +304,7 @@ a.header-logo[href]:focus {
 .about-title {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .about-info {
@@ -323,7 +324,7 @@ a.header-logo[href]:focus {
 .contacts-title {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .contacts-info {
@@ -337,7 +338,7 @@ a.header-logo[href]:focus {
 .filters h2 {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 
     background-color: #dcdcdc;
@@ -350,7 +351,7 @@ a.header-logo[href]:focus {
 .filters legend {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
 }
 
 .price-range input {
@@ -386,7 +387,7 @@ a.header-logo[href]:focus {
 .sort h2 {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
@@ -401,11 +402,12 @@ a.header-logo[href]:focus {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.sort a:hover {
+.sort a:hover,
+.sort a:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.sort a:focus {
+.sort a:active {
     color: #000000;
 }
 
@@ -420,11 +422,12 @@ a.header-logo[href]:focus {
 .catalog-item-name a {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
     color: #000000;
 }
 
-.catalog-item:hover img {
+.catalog-item:hover img,
+.catalog-item:focus img {
     opacity: 0.7;
 }
 
@@ -441,18 +444,19 @@ a.header-logo[href]:focus {
     border: none;
 }
 
-.compare-link:hover {
+.compare-link:hover,
+.compare-link:focus {
     color: #000000;
 }
 
-.compare-link:focus {
+.compare-link:active {
     color: rgba(0, 0, 0, 0.2);
 }
 
 .catalog-item-price {
     font-family: "gilroylight", Arial, sans-serif;
     font-size: 16px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
     color: #464646;
 }
 
@@ -465,15 +469,16 @@ a.header-logo[href]:focus {
 .pagination-item a {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-item a[href]:hover {
+.pagination-item a[href]:hover,
+.pagination-item a[href]:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.pagination-item a[href]:focus {
+.pagination-item a[href]:active {
     color: #000000;
 }
 
@@ -487,12 +492,14 @@ a.header-logo[href]:focus {
 }
 
 .pagination-prev a[href]:hover,
-.pagination-next a[href]:hover {
+.pagination-next a[href]:hover,
+.pagination-prev a[href]:focus,
+.pagination-next a[href]:focus {
     background-color: #d9d9d9;
 }
 
-.pagination-prev a[href]:focus,
-.pagination-next a[href]:focus {
+.pagination-prev a[href]:active,
+.pagination-next a[href]:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -505,16 +512,17 @@ a.header-logo[href]:focus {
 .footer-logo {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 48px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffc600;
 }
 
-.footer-logo[href]:hover {
+.footer-logo[href]:hover,
+.footer-logo[href]:focus {
     color: rgba(255, 198, 0, 0.6);
 }
 
-.footer-logo[href]:focus {
+.footer-logo[href]:active {
     color: rgba(255, 198, 0, 0.3);
 }
 
@@ -529,16 +537,17 @@ a.header-logo[href]:focus {
 .footer-site-navigation-item a {
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.footer-site-navigation-item a:hover {
+.footer-site-navigation-item a:hover,
+.footer-site-navigation-item a:focus {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-site-navigation-item a:focus {
+.footer-site-navigation-item a:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -555,11 +564,12 @@ a.header-logo[href]:focus {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-user-navigation a:hover {
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
     color: rgba(255, 255, 255, 1);
 }
 
-.footer-user-navigation a:focus {
+.footer-user-navigation a:active {
     color: rgba(255, 255, 255, 0.3);
 }
 

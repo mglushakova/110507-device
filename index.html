@@ -9,9 +9,9 @@
   <body>
     <header class="main-header">
       <a class="header-logo">
-        <img src="img/logo-black.svg" width="164" height="36" alt="Магазин Device">
+        <img src="img/logo-black.png" width="164" height="36" alt="Магазин Device">
       </a>
-      <form class="search">
+      <form class="search" action="search.html" method="get">
         <input class="search-input" type="search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
@@ -213,7 +213,7 @@
     </main>
     <footer class="main-footer">
       <a class="footer-logo">
-        <img src="img/logo-yellow.svg" width="163" height="36" alt="Магазин Device">
+        <img src="img/logo-yellow.png" width="163" height="36" alt="Магазин Device">
       </a>
       <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
       <ul class="footer-site-navigation">
@@ -243,19 +243,19 @@
         <p>
           <label>
             Ваше имя:
-            <input class="write-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+            <input class="write-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
           </label>
         </p>
         <p>
           <label>
             Ваш e-mail:
-            <input class="write-input" type="email" name="e-mail" value="" placeholder="Для отправки ответа">
+            <input class="write-input" type="email" name="e-mail" value="" placeholder="Для отправки ответа" required>
           </label>
         </p>
         <p>
           <label>
             Текст письма:
-            <textarea class="write-textarea" name="message" placeholder="В свободной форме"></textarea>
+            <textarea class="write-textarea" name="message" placeholder="В свободной форме" required></textarea>
           </label>
         </p>
         <button class="button write-button" type="submit">Отправить</button>

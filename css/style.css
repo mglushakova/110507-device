@@ -65,6 +65,7 @@ a {
 
 .button {
     vertical-align: middle;
+    text-align: center;
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -427,7 +428,8 @@ a[href].header-logo:active {
     color: #000000;
 }
 
-.sort-param-current a {
+.sort-param-current a,
+.sort-order-current a {
     color: #000000;
 }
 
@@ -625,6 +627,7 @@ a[href].footer-logo:active {
     border: 3px solid #f7e296;
 }
 
-.write-form input:invalid {
+.write-form input:focus:invalid,
+.write-form textarea:focus:invalid {
     background-color: #f6dada;
 }

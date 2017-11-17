@@ -9,10 +9,10 @@
 <body>
   <header class="main-header">
     <a class="header-logo" href="index.html">
-      <img src="img/logo-black.svg" width="164" height="36" alt="Магазин Device">
+      <img src="img/logo-black.png" width="164" height="36" alt="Магазин Device">
     </a>
-    <form class="search">
-      <input class="search-input" type="search" placeholder="Поиск по сайту">
+    <form class="search" action="search.html" method="get">
+      <input class="search-input" type="search" placeholder="Поиск по сайту" required>
       <button class="search-button" type="submit">Найти</button>
     </form>
     <ul class="user-navigation">
@@ -102,13 +102,13 @@
           <legend>Bluetooth</legend>
           <ul>
             <li class="filter-option">
-              <span class="radio-indicator"></span>
               <input class="visually-hidden filter-input filter-radio" id="filter-yes" type="radio" name="bluetooth" value="yes" checked>
+              <span class="radio-indicator"></span>
               <label for="filter-yes">Есть</label>
             </li>
             <li class="filter-option">
-              <span class="radio-indicator"></span>
               <input class="visually-hidden filter-input filter-radio" id="filter-no" type="radio" name="bluetooth" value="no">
+              <span class="radio-indicator"></span>
               <label for="filter-no">Нет</label>
             </li>
           </ul>
@@ -189,7 +189,7 @@
   </main>
   <footer class="main-footer">
     <a class="footer-logo" href="index.html">
-      <img src="img/logo-yellow.svg" width="163" height="36" alt="Магазин Device">
+      <img src="img/logo-yellow.png" width="163" height="36" alt="Магазин Device">
     </a>
     <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-site-navigation">

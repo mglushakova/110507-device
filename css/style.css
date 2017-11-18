@@ -119,22 +119,52 @@ a[href].header-logo:active {
 
 .search-input {
     font: inherit;
-    color: #000000;
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 
     background-color: transparent;
     border: none;
 }
 
 .search-input:hover {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .search-input:focus {
     color: #000000;
-    opacity: 1;
-    
+
     border-bottom: 2px solid #000000;
+}
+
+.search-input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:hover::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-input:hover:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-input:hover::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-input:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .search-button {
@@ -630,4 +660,24 @@ a[href].footer-logo:active {
 .write-form input:focus:invalid,
 .write-form textarea:focus:invalid {
     background-color: #f6dada;
+}
+
+.write-form input::-webkit-input-placeholder,
+.write-form textarea::-webkit-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.write-form input:-ms-input-placeholder,
+.write-form textarea:-ms-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.write-form input::-ms-input-placeholder,
+.write-form textarea::-ms-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.write-form input::placeholder,
+.write-form textarea::placeholder {
+    color: rgba(70, 70, 70, 0.4);
 }

@@ -309,7 +309,6 @@ a[href].header-logo:active {
 }
 
 .promo-list {
-    display: flex;
     margin: 0;
     padding: 0;
 
@@ -323,7 +322,7 @@ a[href].header-logo:active {
     justify-content: space-between;
 }
 
-.promo-wrap {
+.promo-content {
     order: 1;
 
     width: 560px;
@@ -354,6 +353,10 @@ a[href].header-logo:active {
     font-size: 13px;
     line-height: 20px;
     color: #464646;
+}
+
+.product-image {
+    text-align: center;
 }
 
 .categories {
@@ -472,7 +475,7 @@ a[href].header-logo:active {
 
 .brands-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 
@@ -516,7 +519,7 @@ a[href].header-logo:active {
 }
 
 .about {
-    width: 460px;
+    width: 480px;
 }
 
 .about-title {

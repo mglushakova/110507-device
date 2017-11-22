@@ -33,10 +33,11 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 1440px;
+    min-height: 1800px;
 
     font-family: "open_sanslight", "Arial", sans-serif;
     font-size: 15px;
-    line-height: 36px;
     letter-spacing: 0.01em;
     color: #000000;
     
@@ -91,8 +92,24 @@ a {
     background-image: none;
 }
 
-.main-header {
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header-wrapper {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+
     background-color: #f7e296;
+    background-image: linear-gradient(#ffffff 40px, #f7e296 40px);
+}
+
+.inner-page .main-header {
+    margin-bottom: 40px;
 }
 
 .main-header a {
@@ -108,6 +125,12 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.header-logo img {
+    margin-bottom: 30px;
+    width: 164px;
+    height: 36px;
+}
+
 a[href].header-logo:hover,
 a[href].header-logo:focus {
     opacity: 0.6;
@@ -117,8 +140,19 @@ a[href].header-logo:active {
     opacity: 0.3;
 }
 
+.main-header-top-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search {
+    width: 440px;
+}
+
 .search-input {
     font: inherit;
+    line-height: 36px;
     color: rgba(0, 0, 0, 0.3);
 
     background-color: transparent;
@@ -168,6 +202,8 @@ a[href].header-logo:active {
 }
 
 .search-button {
+    line-height: 36px;
+
     background-color: transparent;
     border: 2px solid #000000;
     border-radius: 0;
@@ -187,14 +223,22 @@ a[href].header-logo:active {
 }
 
 .user-navigation {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+
     list-style: none;
 }
 
 .user-navigation a {
     font-size: 15px;
+    line-height: 36px;
 }
 
 .main-navigation ul {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -217,18 +261,30 @@ a[href].header-logo:active {
     text-transform: none;
 }
 
+.inner-title-wrapper {
+    padding-left: 60px;
+}
+
 .page-title {
+    margin: 0;
+    margin-bottom: 30px;
+
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
     letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
     list-style: none;
 }
 
 .breadcrumbs a,
 .breadcrumbs-current {
+    line-height: 36px;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -239,6 +295,31 @@ a[href].header-logo:active {
 
 .breadcrumbs a:active {
     color: rgba(0, 0, 0, 0.1);
+}
+
+.promo {
+    margin-bottom: 110px;
+}
+
+.promo-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    overflow: hidden;
+}
+
+.promo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-wrap {
+    order: 1;
+
+    width: 560px;
 }
 
 .promo-title {
@@ -268,8 +349,21 @@ a[href].header-logo:active {
     color: #464646;
 }
 
+.categories {
+    margin-bottom: 160px;
+}
+
 .categories ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+}
+
+.categories-item {
+    width: 160px;
 }
 
 .categories-wrap {
@@ -297,25 +391,46 @@ a[href].header-logo:active {
 }
 
 .services {
+    margin-bottom: 95px;
+
     background-color: #e5e5e5;
+    background-image: linear-gradient(#ffffff 30px, #e5e5e5 30px);
 }
 
 .services-list {
     list-style: none;
 }
 
+.services-item {
+    margin-left: 400px;
+    width: 460px;
+}
+
 .service-title {
+    margin: 0;
+
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
     letter-spacing: 0.01em;
 }
 
 .service-description {
+    margin: 0;
+
     line-height: 30px;
     color: #464646;
 }
 
+.brands {
+    margin-bottom: 150px;
+}
+
 .brands-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -323,12 +438,14 @@ a[href].header-logo:active {
     width: 260px;
     height: 100px;
 
+    opacity: 0.2;
     background-position: 0 0;
     background-repeat: no-repeat;
 }
 
 .brands-logo:hover,
 .brands-logo:focus {
+    opacity: 1;
     background-position: 0 -100px;
 }
 
@@ -346,6 +463,15 @@ a[href].header-logo:active {
 
 .brands-vive {
     background-image: url("../img/brand-sprite-vive.png");
+}
+
+.index-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 460px;
 }
 
 .about-title {
@@ -368,6 +494,10 @@ a[href].header-logo:active {
     line-height: 40px;
 }
 
+.contacts {
+    width: 560px;
+}
+
 .contacts-title {
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
@@ -378,20 +508,44 @@ a[href].header-logo:active {
     line-height: 30px;
 }
 
+.catalog-wrapper {
+    padding-top: 30px;
+
+    background-color: #ebebeb;
+    background-image:
+            linear-gradient(90deg, #efefef 33%, #ffffff 33%),
+            linear-gradient(90deg, #dbdbdb 33%, #ebebeb 33%);
+    background-position: 0 70px, 0 0;
+    background-repeat: no-repeat;
+}
+
+.catalog-wrapper .container {
+    display: flex;
+}
+
+.catalog-right-wrapper {
+    padding-left: 105px;
+}
+
 .filters {
-    background-color: #eeeeee;
+    padding-left: 60px;
+    width: 270px;
 }
 
 .filters h2 {
+    margin: 0;
+    margin-bottom: 110px;
+
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 16px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-
-    background-color: #dcdcdc;
 }
 
 .filters fieldset {
+    margin: 0;
+    padding: 0;
+
     border: none;
 }
 
@@ -415,6 +569,9 @@ a[href].header-logo:active {
 }
 
 .filters ul {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -428,10 +585,12 @@ a[href].header-logo:active {
 }
 
 .sort {
-    background-color: #ebebeb;
+    display: flex;
 }
 
 .sort h2 {
+    margin: 0;
+
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 16px;
     letter-spacing: 0.2em;
@@ -463,8 +622,27 @@ a[href].header-logo:active {
     color: #000000;
 }
 
+.catalog {
+    width: 760px;
+}
+
 .catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+}
+
+.catalog-item {
+    width: 360px;
+    margin-right: 40px;
+}
+
+.catalog-item:nth-child(even) {
+    margin-right: 0;
 }
 
 .catalog-item-name a {
@@ -554,9 +732,39 @@ a[href].header-logo:active {
 }
 
 .main-footer {
+    margin-top: 85px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+
     color: #ffffff;
 
     background-color: #464646;
+}
+
+.inner-page .main-footer {
+    margin-top: 0;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.main-footer-left {
+    width: 260px;
+}
+
+.main-footer-middle {
+    margin-left: 100px;
+    margin-top: 70px;
+
+    text-align: center;
+}
+
+.main-footer-right {
+    margin-left: auto;
+    width: 330px;
+
+    text-align: right;
 }
 
 .footer-logo {
@@ -581,6 +789,9 @@ a[href].footer-logo:active {
 }
 
 .footer-site-navigation {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -602,15 +813,22 @@ a[href].footer-logo:active {
 }
 
 .footer-social {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .footer-user-navigation {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .footer-user-navigation a {
     font-size: 15px;
+    line-height: 36px;
     color: rgba(255, 255, 255, 0.7);
 }
 

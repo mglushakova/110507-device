@@ -102,7 +102,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .main-header-wrapper {
@@ -150,7 +150,7 @@ a[href].header-logo:active {
 .main-header-top-line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .search {
@@ -305,7 +305,7 @@ a[href].header-logo:active {
 }
 
 .promo {
-    margin-bottom: 110px;
+    margin-bottom: 105px;
 }
 
 .promo-list {
@@ -404,12 +404,50 @@ a[href].header-logo:active {
     background-image: linear-gradient(#ffffff 30px, #e5e5e5 30px);
 }
 
-.services-list {
+.services .container {
+    display: flex;
+}
+
+.services-names {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+
     list-style: none;
 }
 
-.services-item {
-    margin-left: 400px;
+.services-names .button:active {
+    color: #f7e184;
+
+    background-color: #000000;
+}
+
+.services-names-item {
+    margin-bottom: 25px;
+    width: 280px;
+    height: 40px;
+}
+
+.services-current .button,
+.services-current .button:hover,
+.services-current .button:focus,
+.services-current .button:active {
+    color: #f7e184;
+
+    background-color: #000000;
+    background-image: none;
+}
+
+.services-description {
+    margin: 0;
+    margin-left: 100px;
+    padding: 0;
+    width: 700px;
+
+    list-style: none;
+}
+
+.services-description-item {
     width: 460px;
 }
 
@@ -429,7 +467,7 @@ a[href].header-logo:active {
 }
 
 .brands {
-    margin-bottom: 150px;
+    margin-bottom: 155px;
 }
 
 .brands-list {
@@ -516,7 +554,7 @@ a[href].header-logo:active {
 }
 
 .catalog-wrapper {
-    padding-top: 30px;
+    padding-top: 25px;
 
     background-color: #ebebeb;
     background-image:

@@ -30,11 +30,18 @@
     font-style: normal;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
-    min-width: 1440px;
-    min-height: 1800px;
+    min-width: 1200px;
 
     font-family: "open_sanslight", "Arial", sans-serif;
     font-size: 15px;

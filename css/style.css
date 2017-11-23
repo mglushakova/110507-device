@@ -49,6 +49,7 @@ body {
     color: #000000;
     
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 a {
@@ -305,6 +306,7 @@ a[href].header-logo:active {
 }
 
 .promo {
+    margin-top: -110px;
     margin-bottom: 105px;
 }
 
@@ -556,28 +558,43 @@ a[href].header-logo:active {
     line-height: 30px;
 }
 
-.catalog-wrapper {
-    padding-top: 25px;
-
-    background-color: #ebebeb;
-    background-image:
-            linear-gradient(90deg, #efefef 33%, #ffffff 33%),
-            linear-gradient(90deg, #dbdbdb 33%, #ebebeb 33%);
-    background-position: 0 70px, 0 0;
-    background-repeat: no-repeat;
-}
-
-.catalog-wrapper .container {
+.catalog-page.container {
     display: flex;
-}
-
-.catalog-right-wrapper {
-    padding-left: 105px;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-top: 25px;
 }
 
 .filters {
-    padding-left: 60px;
+    position: relative;
+
     width: 270px;
+}
+
+.filters:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -25px;
+    z-index: -1;
+
+    width: 2000px;
+    height: 70px;
+
+    background-color: #dcdcdc;
+}
+
+.filters:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -25px;
+    z-index: -2;
+
+    width: 2000px;
+    height: 100%;
+
+    background-color: #eeeeee;
 }
 
 .filters h2 {
@@ -633,7 +650,23 @@ a[href].header-logo:active {
 }
 
 .sort {
+    position: relative;
+
     display: flex;
+    width: 760px;
+}
+
+.sort:before {
+    content: "";
+    position: absolute;
+    left: -500px;
+    top: -25px;
+    z-index: -3;
+
+    width: 2500px;
+    height: 70px;
+
+    background-color: #ebebeb;
 }
 
 .sort h2 {

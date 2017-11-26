@@ -424,7 +424,7 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 2px;
 
     width: 18px;

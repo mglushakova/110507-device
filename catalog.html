@@ -33,24 +33,18 @@
           <li class="catalog-link">
             <a href="#">Каталог товаров</a>
             <div class="catalog-navigation">
-              <div class="catalog-navigation-left">
-                <ul>
-                  <li><a href="catalog.html">Виртуальная реальность</a></li>
-                  <li><a class="current-link">Моноподы для селфи</a></li>
-                  <li><a href="catalog.html">Экшн-камеры</a></li>
-                </ul>
-              </div>
-              <div class="catalog-navigation-middle">
-                <ul>
-                  <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                  <li><a href="catalog.html">Умные часы</a></li>
-                </ul>
-              </div>
-              <div class="catalog-navigation-right">
-                <ul>
-                  <li><a href="catalog.html">Квадрокоптеры</a></li>
-                </ul>
-              </div>
+              <ul class="catalog-navigation-left">
+                <li><a href="catalog.html">Виртуальная реальность</a></li>
+                <li><a class="current-link">Моноподы для селфи</a></li>
+                <li><a href="catalog.html">Экшн-камеры</a></li>
+              </ul>
+              <ul class="catalog-navigation-middle">
+                <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                <li><a href="catalog.html">Умные часы</a></li>
+              </ul>
+              <ul class="catalog-navigation-right">
+                <li><a href="catalog.html">Квадрокоптеры</a></li>
+              </ul>
             </div>
           </li>
           <li class="delivery-link"><a href="#">Доставка</a></li>
@@ -78,11 +72,11 @@
         <section class="filters">
           <h2>Фильтр:</h2>
           <form class="filter" method="get" action="#">
-            <fieldset>
+            <fieldset class="filter-price">
               <legend>Стоимость</legend>
               <div class="price-range">
-                <button class="price-min" type="button"></button>
-                <button class="price-max" type="button"></button>
+                <button class="price-min" type="button" aria-label="Минимальная цена"></button>
+                <button class="price-max" type="button" aria-label="Максимальная цена"></button>
                 <div class="price-values">
                   <label>
                     от
@@ -95,48 +89,41 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-color">
               <legend>Цвет</legend>
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-checkbox" id="filter-black" type="checkbox" name="black" value="black" checked>
-                  <span class="checkbox-indicator"></span>
-                  <label for="filter-black">Черный</label>
+                  <label class="checkbox-label" for="filter-black">Черный</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-checkbox" id="filter-white" type="checkbox" name="white" value="white">
-                  <span class="checkbox-indicator"></span>
-                  <label for="filter-white">Белый</label>
+                  <label class="checkbox-label" for="filter-white">Белый</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-checkbox" id="filter-blue" type="checkbox" name="blue" value="blue" checked>
-                  <span class="checkbox-indicator"></span>
-                  <label for="filter-blue">Синий</label>
+                  <label class="checkbox-label" for="filter-blue">Синий</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-checkbox" id="filter-red" type="checkbox" name="red" value="red" checked>
-                  <span class="checkbox-indicator"></span>
-                  <label for="filter-red">Красный</label>
+                  <label class="checkbox-label" for="filter-red">Красный</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-checkbox" id="filter-pink" type="checkbox" name="pink" value="pink">
-                  <span class="checkbox-indicator"></span>
-                  <label for="filter-pink">Розовый</label>
+                  <label class="checkbox-label" for="filter-pink">Розовый</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-bluetooth">
               <legend>Bluetooth</legend>
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-radio" id="filter-yes" type="radio" name="bluetooth" value="yes" checked>
-                  <span class="radio-indicator"></span>
-                  <label for="filter-yes">Есть</label>
+                  <label class="radio-label" for="filter-yes">Есть</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-radio" id="filter-no" type="radio" name="bluetooth" value="no">
-                  <span class="radio-indicator"></span>
-                  <label for="filter-no">Нет</label>
+                  <label class="radio-label" for="filter-no">Нет</label>
                 </li>
               </ul>
             </fieldset>

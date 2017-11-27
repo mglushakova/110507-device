@@ -45,7 +45,6 @@ body {
 
     font-family: "open_sanslight", "Arial", sans-serif;
     font-size: 15px;
-    letter-spacing: 0.01em;
     color: #000000;
     
     background-color: #ffffff;
@@ -75,8 +74,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 42px;
+    padding-right: 42px;
     padding-top: 13px;
     padding-bottom: 13px;
 
@@ -84,7 +83,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.9px;
     text-transform: uppercase;
     color: #000000;
 
@@ -120,7 +119,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-wrapper {
-    padding-top: 20px;
+    padding-top: 21px;
     padding-bottom: 165px;
     padding-left: 60px;
     padding-right: 60px;
@@ -130,11 +129,11 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 
 .inner-page .main-header-wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 52px;
 }
 
 .main-header a {
@@ -151,7 +150,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-logo img {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     width: 164px;
     height: 36px;
 }
@@ -169,7 +168,7 @@ a[href].header-logo:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 
 .search {
@@ -183,7 +182,7 @@ a[href].header-logo:active {
 
     position: absolute;
     top: 17px;
-    left: 0;
+    left: 3px;
 
     width: 17px;
     height: 17px;
@@ -194,13 +193,14 @@ a[href].header-logo:active {
 }
 
 .search-input {
-    padding-left: 40px;
+    padding-left: 39px;
     padding-top: 6px;
     padding-bottom: 6px;
     width: 354px;
 
     font: inherit;
     line-height: 36px;
+    letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 0.3);
 
     background-color: transparent;
@@ -297,6 +297,7 @@ a[href].header-logo:active {
 .user-navigation a {
     font-size: 15px;
     line-height: 36px;
+    letter-spacing: 0.15px;
 }
 
 .login-link-container {
@@ -308,7 +309,7 @@ a[href].header-logo:active {
     position: relative;
 
     margin-right: 20px;
-    padding-left: 27px;
+    padding-left: 26px;
 }
 
 .main-header .logout-link {
@@ -424,7 +425,7 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    right: -10px;
+    right: -8px;
     top: 2px;
 
     width: 18px;
@@ -444,7 +445,7 @@ a[href].header-logo:active {
 .main-navigation a {
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.5px;
     text-transform: uppercase;
 }
 
@@ -466,17 +467,12 @@ a[href].header-logo:active {
 }
 
 .catalog-navigation-left {
-    width: 220px;
+    width: 239px;
 }
 
 .catalog-navigation-middle,
 .catalog-navigation-right {
-    width: 180px;
-}
-
-.catalog-navigation-left,
-.catalog-navigation-middle {
-    margin-right: 20px;
+    width: 200px;
 }
 
 .catalog-navigation ul {
@@ -495,11 +491,11 @@ a[href].header-logo:active {
 }
 
 .delivery-link {
-    margin-left: 298px;
+    margin-left: 301px;
 }
 
 .garanty-link {
-    margin-left: 38px;
+    margin-left: 35px;
 }
 
 .contacts-link {
@@ -516,7 +512,7 @@ a[href].header-logo:active {
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.6px;
 }
 
 .breadcrumbs {
@@ -530,7 +526,7 @@ a[href].header-logo:active {
 }
 
 .breadcrumbs li {
-    margin-right: 39px;
+    margin-right: 31px;
 }
 
 .breadcrumbs a,
@@ -538,6 +534,7 @@ a[href].header-logo:active {
     position: relative;
 
     line-height: 36px;
+    letter-spacing: 0.14px;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -554,8 +551,8 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    right: -21px;
-    top: 8px;
+    right: -15px;
+    top: 7px;
 
     width: 5px;
     height: 7px;
@@ -569,13 +566,15 @@ a[href].header-logo:active {
     position: relative;
 
     margin-top: -110px;
-    margin-bottom: 110px;
+    margin-bottom: 91px;
+    width: 1160px;
+    height: 500px;
 }
 
 .slider-controls {
     position: absolute;
-    right: 100px;
-    top: 317px;
+    right: 81px;
+    bottom: 164px;
 
     width: 80px;
     height: 12px;
@@ -636,7 +635,6 @@ a[href].header-logo:active {
 .promo-item {
     display: none;
     justify-content: space-between;
-    align-items: center;
 }
 
 .promo-item:nth-child(1) {
@@ -649,8 +647,8 @@ a[href].header-logo:active {
 
     order: 1;
 
-    padding-top: 60px;
-    width: 560px;
+    padding-top: 80px;
+    width: 541px;
 }
 
 .promo-content::before {
@@ -658,7 +656,7 @@ a[href].header-logo:active {
 
     position: absolute;
     left: 0;
-    top: 17px;
+    top: 36px;
 
     width: 100px;
     height: 7px;
@@ -668,8 +666,8 @@ a[href].header-logo:active {
 
 .promo-content::after {
     position: absolute;
-    left: 332px;
-    top: -31px;
+    left: 329px;
+    top: -15px;
     z-index: -1;
 
     width: 100px;
@@ -681,25 +679,44 @@ a[href].header-logo:active {
     color: #ffffff;
 }
 
-.promo-item .promo-content:first-child::after {
+.promo-item:nth-child(1) .promo-content::after {
     content: "01";
 }
 
-.promo-item .promo-content:nth-child(2)::after {
+.promo-item:nth-child(2) .promo-content::after {
     content: "02";
+
+    left: 306px;
 }
 
-.promo-item .promo-content:nth-child(3)::after {
+.promo-item:nth-child(3) .promo-content::after {
     content: "03";
+
+    left: 303px;
+}
+
+.promo-item:nth-child(1) .product-image {
+    margin-left: 70px;
+    margin-top: -1px;
+}
+
+.promo-item:nth-child(2) .product-image {
+    margin-left: 97px;
+    margin-top: 11px;
+}
+
+.promo-item:nth-child(3) .product-image {
+    margin-left: 11px;
+    margin-top: 64px;
 }
 
 .promo-title {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 21px;
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.6px;
 }
 
 .promo-description {
@@ -707,20 +724,21 @@ a[href].header-logo:active {
     margin-bottom: 53px;
 
     line-height: 30px;
+    letter-spacing: 0.15px;
     color: #464646;
 }
 
 .product-features {
     display: flex;
     margin: 0;
-    margin-top: 63px;
+    margin-top: 64px;
     padding: 0;
 
     list-style: none;
 }
 
 .product-features li {
-     margin-right: 80px;
+     margin-right: 78px;
  }
 
 .product-features li:last-child {
@@ -733,21 +751,18 @@ a[href].header-logo:active {
 
     font-family: "gilroylight", "Arial", sans-serif;
     font-size: 36px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.36px;
 }
 
 .product-features-name {
     font-size: 13px;
     line-height: 20px;
+    letter-spacing: 0.13px;
     color: #464646;
 }
 
-.product-image {
-    margin: 0 auto;
-}
-
 .categories {
-    margin-bottom: 160px;
+    margin-bottom: 157px;
 }
 
 .categories ul {
@@ -768,6 +783,7 @@ a[href].header-logo:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 35px;
     width: 160px;
     height: 160px;
 
@@ -792,15 +808,17 @@ a[href].header-logo:active {
 }
 
 .categories-item h3 {
+    margin: 0;
+
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.18px;
     color: #000000;
 }
 
 .services {
-    margin-bottom: 95px;
-    padding-bottom: 115px;
+    margin-bottom: 94px;
+    padding-bottom: 113px;
 
     background-color: #e5e5e5;
     background-image: linear-gradient(#ffffff 30px, #e5e5e5 30px);
@@ -825,7 +843,7 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    right: 15px;
+    right: 16px;
     top: -80px;
     width: 7px;
     height: 319px;
@@ -896,7 +914,7 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    right: 10px;
+    right: 2px;
     top: 15px;
     width: 140px;
     height: 170px;
@@ -917,22 +935,23 @@ a[href].header-logo:active {
 
 .service-title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.9px;
 }
 
 .service-description {
     margin: 0;
 
     line-height: 30px;
+    letter-spacing: 0.27px;
     color: #464646;
 }
 
 .brands {
-    margin-bottom: 140px;
+    margin-bottom: 142px;
 }
 
 .brands-list {
@@ -990,7 +1009,7 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    top: -48px;
+    top: -49px;
     left: 0;
     width: 80px;
     height: 7px;
@@ -1004,7 +1023,7 @@ a[href].header-logo:active {
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.15px;
 }
 
 .about-info {
@@ -1017,7 +1036,7 @@ a[href].header-logo:active {
 .delivery-list {
     margin: 0;
     margin-top: 65px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
     padding: 0;
 
     list-style: none;
@@ -1066,7 +1085,7 @@ a[href].header-logo:active {
     content: "";
 
     position: absolute;
-    top: -48px;
+    top: -49px;
     left: 0;
     width: 80px;
     height: 7px;
@@ -1080,7 +1099,7 @@ a[href].header-logo:active {
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.15px;
 }
 
 .contacts-info {
@@ -1091,7 +1110,7 @@ a[href].header-logo:active {
 }
 
 .contacts-map {
-    margin-bottom: 63px;
+    margin-bottom: 62px;
 }
 
 .catalog-page.container {
@@ -1104,7 +1123,7 @@ a[href].header-logo:active {
 .filters {
     position: relative;
 
-    width: 270px;
+    width: 268px;
 }
 
 .filters:before {
@@ -1115,7 +1134,7 @@ a[href].header-logo:active {
     z-index: -1;
 
     width: 2000px;
-    height: 70px;
+    height: 69px;
 
     background-color: #dcdcdc;
 }
@@ -1140,7 +1159,7 @@ a[href].header-logo:active {
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 16px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.6px;
     text-transform: uppercase;
 }
 
@@ -1148,14 +1167,9 @@ a[href].header-logo:active {
     position: relative;
 
     margin: 0;
-    margin-top: 50px;
     padding: 0;
 
     border: none;
-}
-
-.filters fieldset:first-child {
-    margin-top: 0;
 }
 
 .filters fieldset::before {
@@ -1163,7 +1177,7 @@ a[href].header-logo:active {
 
     position: absolute;
     left: 0;
-    top: -16px;
+    top: -14px;
 
     width: 200px;
     height: 2px;
@@ -1172,28 +1186,30 @@ a[href].header-logo:active {
 }
 
 .filters legend {
-    margin-bottom: 20px;
-
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.15px;
 }
 
-.price-min {
+.filters .filter-price {
+    margin-bottom: 40px;
+}
+
+.filter-price legend {
+    margin-bottom: 27px;
+}
+
+.price-range {
     position: relative;
-    left: -7px;
-
-    margin-right: 92px;
-
-    cursor: pointer;
 }
 
-.price-min::before {
+.price-range::before {
     content: "";
 
     position: absolute;
     z-index: -1;
-    left: 12px;
+    left: 5px;
+    top: 10px;
 
     width: 196px;
     height: 2px;
@@ -1201,17 +1217,32 @@ a[href].header-logo:active {
     background-color: #dbdbdb;
 }
 
-.price-min::after {
+.price-range::after {
     content: "";
 
     position: absolute;
     z-index: -1;
-    left: 12px;
+    left: 10px;
+    top: 10px;
 
     width: 110px;
     height: 2px;
 
     background-color: #91c92f;
+}
+
+.price-min {
+    position: relative;
+    left: -7px;
+
+    margin-right: 83px;
+}
+
+.price-min:active,
+.price-max:active {
+    transform: scale(1.2);
+
+    cursor: pointer;
 }
 
 .price-range input {
@@ -1240,11 +1271,12 @@ a[href].header-logo:active {
 }
 
 .price-values {
-    margin-top: -6px;
+    margin-top: -10px;
 }
 
 .price-values label:first-child {
-    margin-right: 22px;
+    margin-left: -2px;
+    margin-right: 18px;
 }
 
 .price-values input {
@@ -1258,48 +1290,88 @@ a[href].header-logo:active {
     list-style: none;
 }
 
-.filter-input:disabled + .checkbox-indicator + label {
+.filters .filter-color {
+    margin-bottom: 45px;
+}
+
+.filter-color legend {
+    margin-bottom: 20px;
+}
+
+.filter-input:disabled + label {
     color: #a6a6a6;
 }
 
 .filters label {
+    position: relative;
+
     font-size: 14px;
     line-height: 40px;
 }
 
 .filter-option {
     display: flex;
-    align-items: center;
 }
 
-.filters .checkbox-indicator {
-    display: inline-block;
+.filters .checkbox-label {
+    padding-left: 38px;
+}
+
+.filters .checkbox-label::before {
+    content: "";
+
+    position: absolute;
+    left: -2px;
+    top: 50%;
+
+    margin-top: -13px;
     width: 28px;
     height: 26px;
-    margin-right: 20px;
 
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
-.filter-checkbox:checked ~ .checkbox-indicator {
+.filter-checkbox:checked ~ .checkbox-label::before {
     background-image: url("../img/checkbox-on.svg");
 }
 
-.filters .radio-indicator {
-    display: inline-block;
+.filter-bluetooth legend {
+    margin-bottom: 20px;
+}
+
+.filters .filter-bluetooth {
+    margin-bottom: -2px;
+}
+
+.filters .radio-label {
+    padding-left: 38px;
+}
+
+.filters .radio-label::before {
+    content: "";
+
+    position: absolute;
+    left: -2px;
+    top: 50%;
+
+    margin-top: -13px;
     width: 28px;
     height: 26px;
-    margin-right: 20px;
 
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
-.filter-radio:checked ~ .radio-indicator {
+.filter-radio:checked ~ .radio-label::before {
     background-image: url("../img/radio-on.svg");
+}
+
+.filter-checkbox:focus ~ .checkbox-label::before,
+.filter-radio:focus ~ .radio-label::before {
+    outline: 2px solid #ffc600;
 }
 
 .filters .button {
@@ -1310,7 +1382,6 @@ a[href].header-logo:active {
     position: relative;
 
     display: flex;
-    justify-content: space-between;
     margin-bottom: 95px;
     width: 760px;
 }
@@ -1323,18 +1394,18 @@ a[href].header-logo:active {
     z-index: -3;
 
     width: 2500px;
-    height: 70px;
+    height: 69px;
 
     background-color: #ebebeb;
 }
 
 .sort h2 {
     margin: 0;
-    margin-right: 52px;
+    margin-right: 50px;
 
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 16px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.6px;
     text-transform: uppercase;
 }
 
@@ -1346,10 +1417,15 @@ a[href].header-logo:active {
     list-style: none;
 }
 
+.sort ul:last-child {
+    margin-left: auto;
+}
+
 .sort a {
     font-family: "open_sansregular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
+    letter-spacing: 0;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1400,7 +1476,18 @@ a[href].header-logo:active {
     background-position: 0 0;
 }
 
-.sort-order-current a {
+.sort-order a:hover,
+.sort-order a:focus {
+    opacity: 0.4;
+}
+
+.sort-order a:active {
+    opacity: 1;
+}
+
+.sort-order-current a,
+.sort-order-current a:hover,
+.sort-order-current a:active {
     opacity: 1;
 }
 
@@ -1433,6 +1520,22 @@ a[href].header-logo:active {
     margin-right: 0;
 }
 
+.catalog-item:nth-child(4)::after {
+    content: "";
+
+    position: absolute;
+    right: 26px;
+    top: 29px;
+    z-index: 6;
+
+    width: 62px;
+    height: 62px;
+
+    background-image: url("../img/new.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .catalog-item-name {
     margin: 0;
     width: 260px;
@@ -1443,14 +1546,14 @@ a[href].header-logo:active {
 .catalog-item-name a {
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.15px;
     color: #000000;
 }
 
 .catalog-item-image {
     position: relative;
 
-    margin-bottom: 35px;
+    margin-bottom: 31px;
 }
 
 .catalog-item-image::after {
@@ -1458,9 +1561,10 @@ a[href].header-logo:active {
 
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
+
+    width: 360px;
+    height: 380px;
 
     opacity: 0;
 
@@ -1499,7 +1603,7 @@ a[href].header-logo:active {
 .catalog-item-price {
     position: absolute;
     right: 0;
-    top: 421px;
+    top: 417px;
 }
 
 .compare-link {
@@ -1525,7 +1629,7 @@ a[href].header-logo:active {
 .catalog-item-price {
     font-family: "gilroylight", "Arial", sans-serif;
     font-size: 16px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.15px;
     color: #464646;
 }
 
@@ -1536,7 +1640,7 @@ a[href].header-logo:active {
     margin-bottom: 77px;
     padding: 0;
     padding-top: 27px;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
 
     list-style: none;
 
@@ -1546,7 +1650,7 @@ a[href].header-logo:active {
 .pagination-item a {
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 16px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.2px;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1568,7 +1672,7 @@ a[href].header-logo:active {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 26px;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
 
     text-transform: uppercase;
     color: #000000;
@@ -1589,11 +1693,11 @@ a[href].header-logo:active {
 }
 
 .pagination-item {
-    margin-right: 32px;
+    margin-right: 28px;
 }
 
 .pagination-prev {
-    margin-right: 240px;
+    margin-right: 209px;
 }
 
 .pagination-next {
@@ -1602,8 +1706,8 @@ a[href].header-logo:active {
 }
 
 .main-footer {
-    margin-top: 85px;
-    padding-top: 55px;
+    margin-top: 79px;
+    padding-top: 57px;
     padding-bottom: 65px;
 
     color: #ffffff;
@@ -1629,7 +1733,7 @@ a[href].header-logo:active {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 31px;
 
     width: 80px;
     height: 7px;
@@ -1638,15 +1742,16 @@ a[href].header-logo:active {
 }
 
 .main-footer-middle {
-    margin-left: 100px;
-    margin-top: 75px;
+    margin-left: 107px;
+    margin-top: 81px;
 
     text-align: center;
 }
 
 .main-footer-right {
     margin-left: auto;
-    width: 330px;
+    padding-top: 3px;
+    width: 325px;
 
     text-align: right;
 }
@@ -1654,7 +1759,7 @@ a[href].header-logo:active {
 .footer-logo {
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 48px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.15px;
     text-transform: uppercase;
     color: #ffc600;
 }
@@ -1669,6 +1774,9 @@ a[href].footer-logo:active {
 }
 
 .footer-adress {
+    margin: 0;
+    margin-top: 18px;
+
     line-height: 30px;
 }
 
@@ -1677,9 +1785,9 @@ a[href].footer-logo:active {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
     padding: 0;
-    width: 440px;
+    width: 428px;
 
     list-style: none;
 }
@@ -1687,7 +1795,7 @@ a[href].footer-logo:active {
 .footer-site-navigation-item a {
     font-family: "gilroyextrabold", "Arial", sans-serif;
     font-size: 18px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.6px;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -1706,7 +1814,7 @@ a[href].footer-logo:active {
     justify-content: space-around;
     margin: 0 auto;
     padding: 0;
-    width: 160px;
+    width: 161px;
 
     list-style: none;
 }
@@ -1756,6 +1864,7 @@ a[href].footer-logo:active {
 .footer-user-navigation a {
     font-size: 15px;
     line-height: 36px;
+    letter-spacing: 0.15px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1803,6 +1912,15 @@ a[href].footer-logo:active {
     height: 36px;
 
     fill: #ffc600;
+}
+
+.copyright svg:hover,
+.copyright svg:focus {
+    opacity: 0.6;
+}
+
+.copyright svg:active {
+    opacity: 0.3;
 }
 
 .write-form label {

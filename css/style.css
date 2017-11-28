@@ -34,7 +34,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -43,7 +45,7 @@ body {
     padding: 0;
     min-width: 1200px;
 
-    font-family: "open_sanslight", "Arial", sans-serif;
+    font-family: open_sanslight, Arial, sans-serif;
     font-size: 15px;
     color: #000000;
     
@@ -81,7 +83,7 @@ input[type="radio"].visually-hidden {
 
     vertical-align: middle;
     text-align: center;
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     letter-spacing: 3.9px;
     text-transform: uppercase;
@@ -119,7 +121,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-wrapper {
-    padding-top: 21px;
+    padding-top: 20px;
     padding-bottom: 165px;
     padding-left: 60px;
     padding-right: 60px;
@@ -129,11 +131,11 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 }
 
 .inner-page .main-header-wrapper {
-    padding-bottom: 52px;
+    padding-bottom: 50px;
 }
 
 .main-header a {
@@ -150,7 +152,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-logo img {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     width: 164px;
     height: 36px;
 }
@@ -168,7 +170,7 @@ a[href].header-logo:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 
 .search {
@@ -193,7 +195,8 @@ a[href].header-logo:active {
 }
 
 .search-input {
-    padding-left: 39px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 6px;
     padding-bottom: 6px;
     width: 354px;
@@ -309,7 +312,7 @@ a[href].header-logo:active {
     position: relative;
 
     margin-right: 20px;
-    padding-left: 26px;
+    padding-left: 25px;
 }
 
 .main-header .logout-link {
@@ -372,7 +375,7 @@ a[href].header-logo:active {
 .main-header .cart-link {
     position: relative;
 
-    padding-left: 24px;
+    padding-left: 25px;
 }
 
 .main-header .cart-link::before {
@@ -418,7 +421,7 @@ a[href].header-logo:active {
 .catalog-link > a {
     position: relative;
 
-    padding-right: 21px;
+    padding-right: 20px;
 }
 
 .catalog-link > a::after {
@@ -443,7 +446,7 @@ a[href].header-logo:active {
 }
 
 .main-navigation a {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     letter-spacing: 3.5px;
     text-transform: uppercase;
@@ -458,16 +461,17 @@ a[href].header-logo:active {
     visibility: hidden;
     display: flex;
     width: 1160px;
-    height: 165px;
+    min-height: 165px;
     padding-top: 22px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 33px;
 
     background-color: #f7e296;
 }
 
 .catalog-navigation-left {
-    width: 239px;
+    width: 240px;
 }
 
 .catalog-navigation-middle,
@@ -483,7 +487,7 @@ a[href].header-logo:active {
 }
 
 .catalog-navigation a {
-    font-family: "open_sanslight", "Arial", sans-serif;
+    font-family: open_sanslight, Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0;
@@ -491,7 +495,7 @@ a[href].header-logo:active {
 }
 
 .delivery-link {
-    margin-left: 301px;
+    margin-left: 300px;
 }
 
 .garanty-link {
@@ -510,7 +514,7 @@ a[href].header-logo:active {
     margin: 0;
     margin-bottom: 15px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 47px;
     letter-spacing: 0.6px;
 }
@@ -526,7 +530,7 @@ a[href].header-logo:active {
 }
 
 .breadcrumbs li {
-    margin-right: 31px;
+    margin-right: 30px;
 }
 
 .breadcrumbs a,
@@ -566,14 +570,13 @@ a[href].header-logo:active {
     position: relative;
 
     margin-top: -110px;
-    margin-bottom: 91px;
-    width: 1160px;
+    margin-bottom: 100px;
 }
 
 .slider-controls {
     position: absolute;
-    right: 81px;
-    bottom: 152px;
+    right: 100px;
+    bottom: 150px;
 
     width: 80px;
     height: 12px;
@@ -612,6 +615,7 @@ a[href].header-logo:active {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 20;
 
     margin-left: -3px;
     margin-top: -3px;
@@ -636,8 +640,27 @@ a[href].header-logo:active {
     justify-content: space-between;
 }
 
-.promo-item:nth-child(1) {
+.promo-item-active {
     display: flex;
+}
+
+.promo-item:nth-child(1) .promo-content::after {
+    content: "01";
+}
+
+.promo-item:nth-child(2) .promo-content::after {
+    content: "02";
+}
+
+.promo-item:nth-child(3) .promo-content::after {
+    content: "03";
+}
+
+.product-image-wrap {
+    padding-right: 20px;
+    width: 50%;
+
+    text-align: center;
 }
 
 .promo-content {
@@ -646,15 +669,16 @@ a[href].header-logo:active {
 
     order: 1;
 
+    padding-left: 20px;
     padding-top: 80px;
-    width: 541px;
+    width: 50%;
 }
 
 .promo-content::before {
     content: "";
 
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 36px;
 
     width: 100px;
@@ -665,62 +689,31 @@ a[href].header-logo:active {
 
 .promo-content::after {
     position: absolute;
-    left: 329px;
+    left: 350px;
     top: -15px;
     z-index: -1;
 
     width: 100px;
     height: 7px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 179px;
     line-height: 179px;
     color: #ffffff;
 }
 
-.promo-item:nth-child(1) .promo-content::after {
-    content: "01";
-}
-
-.promo-item:nth-child(2) .promo-content::after {
-    content: "02";
-
-    left: 306px;
-}
-
-.promo-item:nth-child(3) .promo-content::after {
-    content: "03";
-
-    left: 303px;
-}
-
-.promo-item:nth-child(1) .product-image {
-    margin-left: 70px;
-    margin-top: -1px;
-}
-
-.promo-item:nth-child(2) .product-image {
-    margin-left: 97px;
-    margin-top: 11px;
-}
-
-.promo-item:nth-child(3) .product-image {
-    margin-left: 11px;
-    margin-top: 64px;
-}
-
 .promo-title {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 47px;
     letter-spacing: 0.6px;
 }
 
 .promo-description {
     margin: 0;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 
     line-height: 30px;
     letter-spacing: 0.15px;
@@ -730,14 +723,14 @@ a[href].header-logo:active {
 .product-features {
     display: flex;
     margin: 0;
-    margin-top: 64px;
+    margin-top: 65px;
     padding: 0;
 
     list-style: none;
 }
 
 .product-features li {
-     margin-right: 78px;
+     margin-right: 80px;
  }
 
 .product-features li:last-child {
@@ -748,7 +741,7 @@ a[href].header-logo:active {
     display: block;
     margin-bottom: 10px;
 
-    font-family: "gilroylight", "Arial", sans-serif;
+    font-family: gilroylight, Arial, sans-serif;
     font-size: 36px;
     letter-spacing: 0.36px;
 }
@@ -761,7 +754,7 @@ a[href].header-logo:active {
 }
 
 .categories {
-    margin-bottom: 157px;
+    margin-bottom: 160px;
 }
 
 .categories ul {
@@ -809,15 +802,15 @@ a[href].header-logo:active {
 .categories-item h3 {
     margin: 0;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     letter-spacing: 0.18px;
     color: #000000;
 }
 
 .services {
-    margin-bottom: 94px;
-    padding-bottom: 113px;
+    margin-bottom: 95px;
+    padding-bottom: 115px;
 
     background-color: #e5e5e5;
     background-image: linear-gradient(#ffffff 30px, #e5e5e5 30px);
@@ -934,9 +927,9 @@ a[href].header-logo:active {
 
 .service-title {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 47px;
     letter-spacing: 0.9px;
 }
@@ -950,7 +943,7 @@ a[href].header-logo:active {
 }
 
 .brands {
-    margin-bottom: 142px;
+    margin-bottom: 140px;
 }
 
 .brands-list {
@@ -963,34 +956,58 @@ a[href].header-logo:active {
 }
 
 .brands-logo {
+    position: relative;
+    
     width: 260px;
     height: 100px;
 
     opacity: 0.2;
-    background-position: 0 0;
+}
+
+.brands-logo::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 260px;
+    height: 100px;
+
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
-.brands-logo:hover,
-.brands-logo:focus {
+.brands-dji::after {
+    background-image: url("../img/logo-1-black.png");
+}
+
+.brands-spgadgets::after {
+    background-image: url("../img/logo-2-black.png");
+}
+
+.brands-gopro::after {
+    background-image: url("../img/logo-3-black.png");
+}
+
+.brands-vive::after {
+    background-image: url("../img/logo-4-black.png");
+}
+
+.brands-logo:hover {
     opacity: 1;
-    background-position: 0 -100px;
 }
 
-.brands-dji {
-    background-image: url("../img/brand-sprite-dji.png");
+.brands-logo:hover::after {
+    display: none;
 }
 
-.brands-spgadgets {
-    background-image: url("../img/brand-sprite-spgadgets.png");
+.brands-logo {
+    filter: grayscale(100%);
 }
 
-.brands-gopro {
-    background-image: url("../img/brand-sprite-gopro.png");
-}
-
-.brands-vive {
-    background-image: url("../img/brand-sprite-vive.png");
+.brands-logo:hover {
+    filter: none;
 }
 
 .index-wrapper {
@@ -1020,7 +1037,7 @@ a[href].header-logo:active {
     margin: 0;
     margin-bottom: 40px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 47px;
     letter-spacing: 0.15px;
 }
@@ -1035,7 +1052,7 @@ a[href].header-logo:active {
 .delivery-list {
     margin: 0;
     margin-top: 65px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     padding: 0;
 
     list-style: none;
@@ -1046,7 +1063,7 @@ a[href].header-logo:active {
 
     padding-left: 35px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
 }
@@ -1096,7 +1113,7 @@ a[href].header-logo:active {
     margin: 0;
     margin-bottom: 40px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 47px;
     letter-spacing: 0.15px;
 }
@@ -1109,7 +1126,7 @@ a[href].header-logo:active {
 }
 
 .contacts-map {
-    margin-bottom: 62px;
+    margin-bottom: 60px;
 }
 
 .catalog-page.container {
@@ -1125,7 +1142,7 @@ a[href].header-logo:active {
     width: 268px;
 }
 
-.filters:before {
+.filters::before {
     content: "";
     position: absolute;
     right: 0;
@@ -1138,7 +1155,7 @@ a[href].header-logo:active {
     background-color: #dcdcdc;
 }
 
-.filters:after {
+.filters::after {
     content: "";
 
     position: absolute;
@@ -1156,7 +1173,7 @@ a[href].header-logo:active {
     margin: 0;
     margin-bottom: 110px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
@@ -1185,7 +1202,7 @@ a[href].header-logo:active {
 }
 
 .filters legend {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     letter-spacing: 0.15px;
 }
@@ -1251,7 +1268,7 @@ a[href].header-logo:active {
 
 .price-range input,
 .price-range label {
-    font-family: "gilroylight", "Arial", sans-serif;
+    font-family: gilroylight, Arial, sans-serif;
     font-size: 14px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.2);
@@ -1275,7 +1292,7 @@ a[href].header-logo:active {
 
 .price-values label:first-child {
     margin-left: -2px;
-    margin-right: 18px;
+    margin-right: 20px;
 }
 
 .price-values input {
@@ -1313,7 +1330,7 @@ a[href].header-logo:active {
 }
 
 .filters .checkbox-label {
-    padding-left: 38px;
+    padding-left: 40px;
 }
 
 .filters .checkbox-label::before {
@@ -1345,7 +1362,7 @@ a[href].header-logo:active {
 }
 
 .filters .radio-label {
-    padding-left: 38px;
+    padding-left: 40px;
 }
 
 .filters .radio-label::before {
@@ -1385,7 +1402,7 @@ a[href].header-logo:active {
     width: 760px;
 }
 
-.sort:before {
+.sort::before {
     content: "";
     position: absolute;
     left: -500px;
@@ -1402,7 +1419,7 @@ a[href].header-logo:active {
     margin: 0;
     margin-right: 50px;
 
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
@@ -1421,7 +1438,7 @@ a[href].header-logo:active {
 }
 
 .sort a {
-    font-family: "open_sansregular", "Arial", sans-serif;
+    font-family: open_sansregular, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0;
@@ -1543,7 +1560,7 @@ a[href].header-logo:active {
 }
 
 .catalog-item-name a {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     letter-spacing: 0.15px;
     color: #000000;
@@ -1552,7 +1569,7 @@ a[href].header-logo:active {
 .catalog-item-image {
     position: relative;
 
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 
 .catalog-item-image::after {
@@ -1626,7 +1643,7 @@ a[href].header-logo:active {
 }
 
 .catalog-item-price {
-    font-family: "gilroylight", "Arial", sans-serif;
+    font-family: gilroylight, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 0.15px;
     color: #464646;
@@ -1635,10 +1652,10 @@ a[href].header-logo:active {
 .pagination {
     display: flex;
     margin: 0;
-    margin-top: -55px;
-    margin-bottom: 77px;
+    margin-top: -50px;
+    margin-bottom: 75px;
     padding: 0;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-bottom: 25px;
 
     list-style: none;
@@ -1647,7 +1664,7 @@ a[href].header-logo:active {
 }
 
 .pagination-item a {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 3.2px;
     color: rgba(0, 0, 0, 0.3);
@@ -1670,7 +1687,7 @@ a[href].header-logo:active {
 .pagination-next a {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 26px;
+    padding-top: 25px;
     padding-bottom: 25px;
 
     text-transform: uppercase;
@@ -1705,8 +1722,8 @@ a[href].header-logo:active {
 }
 
 .main-footer {
-    margin-top: 79px;
-    padding-top: 57px;
+    margin-top: 80px;
+    padding-top: 55px;
     padding-bottom: 65px;
 
     color: #ffffff;
@@ -1741,22 +1758,22 @@ a[href].header-logo:active {
 }
 
 .main-footer-middle {
-    margin-left: 107px;
-    margin-top: 81px;
+    margin-left: 110px;
+    margin-top: 85px;
 
     text-align: center;
 }
 
 .main-footer-right {
     margin-left: auto;
-    padding-top: 3px;
+    padding-top: 5px;
     width: 325px;
 
     text-align: right;
 }
 
 .footer-logo {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 48px;
     letter-spacing: 0.15px;
     text-transform: uppercase;
@@ -1774,7 +1791,7 @@ a[href].footer-logo:active {
 
 .footer-adress {
     margin: 0;
-    margin-top: 18px;
+    margin-top: 20px;
 
     line-height: 30px;
 }
@@ -1784,7 +1801,7 @@ a[href].footer-logo:active {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
     padding: 0;
     width: 428px;
 
@@ -1792,7 +1809,7 @@ a[href].footer-logo:active {
 }
 
 .footer-site-navigation-item a {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
@@ -1854,7 +1871,7 @@ a[href].footer-logo:active {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
     padding: 0;
 
     list-style: none;
@@ -1881,7 +1898,7 @@ a[href].footer-logo:active {
 }
 
 .footer-user-navigation .login-link {
-    margin-right: 43px;
+    margin-right: 45px;
 }
 
 .footer-user-navigation .login-link svg {
@@ -1889,7 +1906,7 @@ a[href].footer-logo:active {
 }
 
 .footer-user-navigation .compare-link {
-    margin-right: 39px;
+    margin-right: 40px;
 }
 
 .footer-user-navigation .compare-link svg {
@@ -1897,11 +1914,11 @@ a[href].footer-logo:active {
 }
 
 .footer-user-navigation .cart-link svg {
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
 .footer-phone {
-    margin-bottom: 62px;
+    margin-bottom: 60px;
 
     line-height: 30px;
 }
@@ -1923,14 +1940,14 @@ a[href].footer-logo:active {
 }
 
 .write-form label {
-    font-family: "gilroyextrabold", "Arial", sans-serif;
+    font-family: gilroyextrabold, Arial, sans-serif;
     font-size: 18px;
     line-height: 18px;
 }
 
 .write-form input,
 .write-form textarea {
-    font-family: "open_sansregular", "Arial", sans-serif;
+    font-family: open_sansregular, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: rgba(70, 70, 70, 0.4);

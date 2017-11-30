@@ -272,18 +272,20 @@
   <section class="write-form">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="write" action="#" method="post">
-      <p>
-        <label>
-          Ваше имя:
-          <input class="write-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-        </label>
-      </p>
-      <p>
-        <label>
-          Ваш e-mail:
-          <input class="write-input" type="email" name="e-mail" value="" placeholder="Для отправки ответа">
-        </label>
-      </p>
+      <div class="info-wrap">
+        <p class="write-name">
+          <label>
+            Ваше имя:
+            <input class="write-input" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </label>
+        </p>
+        <p class="write-email">
+          <label>
+            Ваш e-mail:
+            <input class="write-input" type="email" name="e-mail" value="" placeholder="Для отправки ответа">
+          </label>
+        </p>
+      </div>
       <p>
         <label>
           Текст письма:
@@ -292,7 +294,7 @@
       </p>
       <button class="button write-button" type="submit">Отправить</button>
     </form>
-    <button class="button modal-close" type="button">Закрыть</button>
+    <button class="button modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 </html>

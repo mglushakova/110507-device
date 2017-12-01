@@ -1972,7 +1972,7 @@ a[href].footer-logo:active {
 
 .write-form {
     position: fixed;
-    top: 120px;
+    top: 50%;
     left: 50%;
     z-index: 25;
 
@@ -1987,7 +1987,15 @@ a[href].footer-logo:active {
     color: #000000;
 
     background-color: #ffffff;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+    box-shadow:
+        0 20px 40px rgba(4, 6, 6, 0.75),
+        0 10px 20px rgba(4, 6, 6, 0.2);
+
+    transform: translateY(-50%);
+}
+
+.write-form-active {
+    display: block;
 }
 
 .modal-close {
@@ -2002,6 +2010,7 @@ a[href].footer-logo:active {
     font-size: 0;
     opacity: 0.5;
 
+    cursor: pointer;
     background-color: #f0c52e;
     background-image: none;
     border-radius: 50%;
@@ -2040,16 +2049,12 @@ a[href].footer-logo:active {
 
 .write-form p {
     margin: 0;
-    margin-bottom: 35px;
-}
-
-.write-form p:last-child {
-    margin-bottom: 40px;
 }
 
 .write-form .info-wrap {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .write-form .write-name,
@@ -2066,7 +2071,7 @@ a[href].footer-logo:active {
 .write-form input,
 .write-form textarea {
     margin-top: 10px;
-    padding: 16px 20px;
+    padding: 13px 17px;
     width: 100%;
 
     font-family: open_sansregular, Arial, sans-serif;
@@ -2075,7 +2080,7 @@ a[href].footer-logo:active {
     color: rgba(70, 70, 70, 0.4);
 
     background-color: #f2f2f2;
-    border: none;
+    border: 3px solid transparent;
 }
 
 .write-form input:hover,
@@ -2116,6 +2121,10 @@ a[href].footer-logo:active {
     color: rgba(70, 70, 70, 0.4);
 }
 
+.write-form .write-message {
+    margin-bottom: 35px;
+}
+
 .write-form textarea {
     min-height: 155px;
 }
@@ -2139,6 +2148,11 @@ a[href].footer-logo:active {
     width: 960px;
     height: 560px;
 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 20px 40px rgba(4, 6, 6, 0.75),
+        0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
+.modal-map-active {
+    display: block;
+}

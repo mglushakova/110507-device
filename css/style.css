@@ -1970,14 +1970,67 @@ a[href].footer-logo:active {
     opacity: 0.3;
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+
+        transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 0.8;
+
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
 .write-form {
     position: fixed;
     top: 50%;
     left: 50%;
     z-index: 25;
 
-    display: none;
+    margin-top: -277px;
     margin-left: -480px;
+    width: 960px;
+
+    display: none;
+}
+
+.write-form-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 25;
+
     padding-top: 100px;
     padding-bottom: 75px;
     padding-left: 100px;
@@ -1987,15 +2040,35 @@ a[href].footer-logo:active {
     color: #000000;
 
     background-color: #ffffff;
-    box-shadow:
-        0 20px 40px rgba(4, 6, 6, 0.75),
-        0 10px 20px rgba(4, 6, 6, 0.2);
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
 
-    transform: translateY(-50%);
+.write-form::before {
+    content: "";
+
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 960px;
+    height: 430px;
+    z-index: 24;
+
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
 }
 
 .write-form-active {
     display: block;
+
+    animation: fade-in 0.6s;
+}
+
+.write-form-error {
+    animation: shake 0.6s;
+}
+
+.write-form .modal-close {
+    z-index: 26;
 }
 
 .modal-close {
@@ -2148,11 +2221,50 @@ a[href].footer-logo:active {
     width: 960px;
     height: 560px;
 
-    box-shadow:
-        0 20px 40px rgba(4, 6, 6, 0.75),
-        0 10px 20px rgba(4, 6, 6, 0.2);
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.modal-map-wrapper {
+    position: relative;
+
+    width: 960px;
+    height: 560px;
+}
+
+.modal-map-wrapper::before {
+    content: "";
+
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 960px;
+    height: 430px;
+    z-index: 24;
+
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
+}
+
+.modal-map iframe {
+    position: relative;
+    z-index: 26;
+
+    border: none;
+}
+
+.modal-map .modal-close {
+    z-index: 27;
+}
+
+.modal-map img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 25;
 }
 
 .modal-map-active {
     display: block;
+
+    animation: fade-in 0.6s;
 }

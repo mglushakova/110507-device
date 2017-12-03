@@ -6,7 +6,7 @@ var writeNameInput = writeFormModal.querySelector("[name=name]");
 var writeEmailInput = writeFormModal.querySelector("[name=e-mail]");
 var writeMessageInput = writeFormModal.querySelector("[name=message]");
 
-var mapLink = document.querySelector(".contacts-map a");
+var mapLink = document.querySelector(".contacts-map");
 var mapModal = document.querySelector(".modal-map");
 var mapCloseButton = mapModal.querySelector(".modal-close");
 
@@ -60,6 +60,7 @@ window.addEventListener("keydown", function (event) {
 });
 
 mapLink.addEventListener("click", function () {
+  console.log("click");
   event.preventDefault();
 
   mapModal.classList.add("modal-map-active");

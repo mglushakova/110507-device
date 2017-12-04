@@ -60,7 +60,6 @@ window.addEventListener("keydown", function (event) {
 });
 
 mapLink.addEventListener("click", function () {
-  console.log("click");
   event.preventDefault();
 
   mapModal.classList.add("modal-map-active");
@@ -71,3 +70,42 @@ mapCloseButton.addEventListener("click", function (event) {
 
   mapModal.classList.remove("modal-map-active");
 });
+
+var controls = document.querySelectorAll(".slider-controls i");
+var slider = document.querySelector(".promo-list");
+
+for ( var i = 0; i < controls.length; i++ ) {
+  controls[i].addEventListener("click", function (event) {
+    for ( var k = 0; k < controls.length; k++ ) {
+      if ( controls[k].classList.contains("active") ) {
+        controls[k].classList.remove("active");
+        slider.children[k].classList.remove("promo-item-active");
+      }
+
+      if ( controls[k] === event.target ) {
+        controls[k].classList.add("active");
+        slider.children[k].classList.add("promo-item-active");
+      }
+    }
+  });
+}
+
+var tabs = document.querySelectorAll(".services-names-item");
+var services = document.querySelector(".services-description");
+
+for ( var n = 0; n < tabs.length; n++ ) {
+  tabs[n].addEventListener("click", function (event) {
+    for ( var k = 0; k < tabs.length; k++ ) {
+      if ( tabs[k].classList.contains("services-current") ) {
+        tabs[k].classList.remove("services-current");
+        services.children[k].classList.remove("services-description-item-active");
+      }
+
+      if ( tabs[k] === event.target.closest("li") ) {
+        tabs[k].classList.add("services-current");
+        services.children[k].classList.add("services-description-item-active");
+      }
+    }
+  });
+}
+

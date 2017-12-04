@@ -582,9 +582,6 @@ a[href].header-logo:active {
     right: 100px;
     bottom: 150px;
     z-index: 20;
-
-    width: 80px;
-    height: 12px;
 }
 
 .slider-controls i {
@@ -643,6 +640,8 @@ a[href].header-logo:active {
 .promo-item {
     display: none;
     justify-content: space-between;
+
+    min-height: 490px;
 }
 
 .promo-item-active {
@@ -662,10 +661,11 @@ a[href].header-logo:active {
 }
 
 .product-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-right: 20px;
     width: 50%;
-
-    text-align: center;
 }
 
 .promo-content {
